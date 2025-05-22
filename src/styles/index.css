@@ -1,0 +1,93 @@
+/* Basic Reset */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  color: #333;
+  /* 3D Illusion Background */
+  background: linear-gradient(135deg, #e0f7fa, #c5cae9); /* Keep a subtle gradient */
+  min-height: 100vh;
+  background-attachment: fixed;
+  perspective: 1000px; /* Set a perspective */
+}
+
+/* Create a pseudo-element to apply the 3D transform */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* Inherit the gradient from the body */
+  transform: translateZ(-20px) scale(1.02); /* Move it back slightly and scale up */
+  transform-origin: center center; /* Ensure scaling is from the center */
+  z-index: -1; /* Place it behind the content */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Ensure padding and border are included in the element's total width and height */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* General button styling */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Optional: Basic responsive adjustments */
+@media (max-width: 768px) {
+  .CalendarWrapper {
+    margin: 10px;
+    padding: 0.5rem;
+  }
+  .DayCellWrapper {
+    min-height: 80px;
+    padding: 4px;
+  }
+  .EventCardWrapper {
+    padding: 3px 5px;
+    font-size: 0.65rem;
+  }
+  .AddEventButton {
+    padding: 3px 6px;
+    font-size: 0.7rem;
+  }
+  .DayNumber {
+    font-size: 0.9rem;
+  }
+  .CalendarHeader h2 {
+    font-size: 1.2rem;
+  }
+  .NavButton {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+  .ModalContent {
+    padding: 1rem;
+  }
+}
