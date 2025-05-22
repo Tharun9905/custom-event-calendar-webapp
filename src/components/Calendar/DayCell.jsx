@@ -1,6 +1,8 @@
-import React from 'react';
+// src/components/Calendar/DayCell.jsx
+
 import styled from 'styled-components';
-import { isSameDay, format } from 'date-fns';
+// REMOVE 'isSameDay' as it's unused in this file
+import { format } from 'date-fns'; // CORRECTED IMPORT
 import EventCard from './EventCard';
 import { useDrop } from 'react-dnd';
 import { useEvents } from '../../contexts/EventContext';
@@ -120,7 +122,7 @@ function DayCell({ date, isCurrentMonth, isToday, events, onAddEvent, onEditEven
             key={event.id}
             event={event}
             onClick={(e) => { e.stopPropagation(); onEditEvent(event); }} // Stop propagation to prevent cell click
-            onDelete={(e) => { e.stopPropagation(); onDelete(event); }}
+            onDelete={(e) => { e.stopPropagation(); onDeleteEvent(event); }} // CORRECTED THIS LINE
           />
         ))}
       </EventList>
