@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useEvents } from '../../contexts/EventContext';
 import { checkConflicts } from '../../utils/conflictUtils';
@@ -36,15 +36,6 @@ const TextArea = styled.textarea`
   font-size: 1rem;
   min-height: 80px;
   resize: vertical; /* Allow vertical resizing */
-`;
-
-const Select = styled.select`
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  background-color: white;
-  cursor: pointer;
 `;
 
 const ButtonGroup = styled.div`
