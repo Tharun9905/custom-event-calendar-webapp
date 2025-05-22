@@ -33,6 +33,44 @@ Developing this calendar application involved overcoming several technical chall
 * **Recurring Event Implementation:** Implementing the logic for handling complex recurring event patterns.
 * **Conflict Detection Algorithms:** Developing efficient algorithms to detect and resolve event conflicts.
 
+## Technologies Used
+
+* **Frontend:** HTML, CSS, JavaScript, React
+* **Date Handling:** date-fns library
+* **Styling:** Styled Components (though not explicitly listed in your provided "Technologies Used", it's used in your code, so I've added it for completeness as it's a key library for your styling)
+* **Drag-and-Drop:** React DnD (often used for drag-and-drop functionality in React, assuming it's used based on your `DayCell.jsx` code)
+* **Testing:** @testing-library/react 
+
+## Getting Started (Local Development)
+
+To run this application on your local machine, follow these steps:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Tharun9905/custom-event-calendar-webapp.git](https://github.com/Tharun9905/custom-event-calendar-webapp.git)
+    ```
+
+2.  **Navigate into the project directory:**
+    ```bash
+    cd custom-event-calendar-webapp
+    ```
+
+3.  **Install dependencies:**
+    This command will install all the necessary Node.js packages and libraries for the project.
+    ```bash
+    npm install
+    ```
+    (Alternatively, if you use Yarn: `yarn install`)
+
+4.  **Start the development server:**
+    This command will start the application in development mode. It will typically open in your default web browser at `http://localhost:3000`.
+    ```bash
+    npm start
+    ```
+    (Alternatively, if you use Yarn: `yarn start`)
+
+The application should now be running locally in your browser.
+
 ## Demo Link
 
 https://custom-event-calendar-we.netlify.app/
@@ -41,9 +79,3 @@ https://custom-event-calendar-we.netlify.app/
 
 * ![WhatsApp Image 2025-05-22 at 19 01 31_92d0b20c](https://github.com/user-attachments/assets/806c3403-468e-43be-8dfc-ae6b521253e0)
 * ![WhatsApp Image 2025-05-22 at 19 01 42_ee741d9b](https://github.com/user-attachments/assets/5d05e05b-9917-4643-9205-30dc95233d93)
-
-## Technologies Used
-
-* **Frontend:** HTML, CSS, JavaScript, React
-* **Date Handling:** date-fns library
-* **Testing:** @testing-library/react 
