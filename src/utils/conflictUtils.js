@@ -1,4 +1,5 @@
-import { isAfter, isBefore, isSameDay, startOfDay } from 'date-fns';
+import { format } from 'date-fns';
+import { isAfter, isBefore, isSameDay } from 'date-fns';
 
 /**
  * Checks for time conflicts between a new event and existing events on the same day.
