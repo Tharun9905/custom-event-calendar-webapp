@@ -1,3 +1,4 @@
+
 import {
   isSameDay,
   addDays,
@@ -6,7 +7,8 @@ import {
   getDay, // 0 for Sunday, 6 for Saturday
   getDate, // Day of month (1-31)
   format,
-  startOfDay
+  startOfDay,
+  endOfDay
 } from 'date-fns';
 
 // Helper to check if a date matches a weekly pattern (e.g., [0, 2] for Sun, Tue)
